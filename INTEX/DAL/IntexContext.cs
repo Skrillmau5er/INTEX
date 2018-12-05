@@ -17,5 +17,4 @@ namespace INTEX.DAL
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
     }
-
 }
