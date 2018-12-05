@@ -27,11 +27,6 @@ namespace INTEX.Controllers
             return View();
         }
 
-        public ActionResult OrderStatus()
-        {
-
-            return View();
-        }
         public ActionResult Login(string username, string password)
         {
             if (username == "singapore" && password == "labemployee")
