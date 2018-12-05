@@ -26,22 +26,12 @@ namespace INTEX.Controllers
 
             return View();
         }
-
-<<<<<<< HEAD
-=======
-        public ActionResult OrderStatus()
-        {
-
-            return View();
-        }
-
         public ActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
->>>>>>> a624379f87caae638b0b566feff34018225742b9
         public ActionResult Login(string username, string password)
         {
             if (username == "seattle" && password == "customersupport")
