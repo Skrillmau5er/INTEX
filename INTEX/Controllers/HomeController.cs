@@ -32,22 +32,30 @@ namespace INTEX.Controllers
 
             return View();
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public ActionResult Login(string username, string password)
         {
-            if (username == "singapore" && password == "labemployee")
+            if (username == "seattle" && password == "customersupport")
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Seattle");
             }
-            else if (username == "seattle" && password == "customersupport")
+            else if (username == "singapore" && password == "labemployee")
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Singapore");
             }
             else if (username == "customer" && password == "password")
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Customer");
             }
             else
             {
+                ViewBag.LoginError = "Incorrect Login Information. Please Try Again.";
                 return View();
             }
         }

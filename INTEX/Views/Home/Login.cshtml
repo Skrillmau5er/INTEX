@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm())
+{
+    @Html.Raw("Username: ") <input type="text" placeholder="username" name="username" />
+
+    @Html.Raw("Password: ") <input type="password" placeholder="password" name="password" />
+
+    <h4 style="color: red;">@Html.Raw(ViewBag.LoginError)</h4>
+
+    <input type="submit" value="Submit" />
+}
