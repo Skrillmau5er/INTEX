@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INTEX.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace INTEX.Controllers
 {
     public class CustomerController : Controller
     {
+        private IntexContext db = new IntexContext();
         // GET: Customer
         public ActionResult Index()
         {
@@ -22,7 +24,6 @@ namespace INTEX.Controllers
 
         public ActionResult OrderStatus()
         {
-
             return View();
         }
 
