@@ -23,5 +23,7 @@ namespace INTEX.Models
         public String ZIP { get; set; }
         public String CustEmail { get; set; }
         public String CustPhone { get; set; }
+
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

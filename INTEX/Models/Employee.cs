@@ -23,5 +23,7 @@ namespace INTEX.Models
         public String ZIP { get; set; }
         public String OfficeCity { get; set; }
         public double HourlyWage { get; set; }
+
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }
