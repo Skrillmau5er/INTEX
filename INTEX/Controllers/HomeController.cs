@@ -32,5 +32,24 @@ namespace INTEX.Controllers
 
             return View();
         }
+        public ActionResult Login(string username, string password)
+        {
+            if (username == "singapore" && password == "labemployee")
+            {
+                return RedirectToAction("Index");
+            }
+            else if (username == "seattle" && password == "customersupport")
+            {
+                return RedirectToAction("Index");
+            }
+            else if (username == "customer" && password == "password")
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+        }
     }
 }
