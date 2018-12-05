@@ -23,8 +23,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("About", "About", "Home", new { @class = "menu-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "menu-link" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "menu-link" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "menu-link" })</li>
+                    <li>@Html.ActionLink("Login", "Login", "Home", new { area = "" }, new { @class = " menu-link" })</li>
                 </ul>
                 @Html.Partial("_LoginPartial", new { @class = "navbar-brand menu-link" })
             </div>
