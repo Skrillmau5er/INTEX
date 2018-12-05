@@ -7,12 +7,13 @@ using System.Web;
 
 namespace INTEX.DAL
 {
-    public class IntextContext : DbContext
+    public class IntexContext : DbContext
     {
-        public IntextContext() : base("IntextContext")
+        public IntexContext() : base("IntexContext")
         {
 
         }
+
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
     }
