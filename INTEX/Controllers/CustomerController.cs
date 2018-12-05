@@ -14,7 +14,19 @@ namespace INTEX.Controllers
             return View();
         }
 
+        public ActionResult Quote()
+        {
+
+            return View();
+        }
+
         public ActionResult OrderStatus()
+        {
+
+            return View();
+        }
+
+        public ActionResult OrderHistory()
         {
 
             return View();

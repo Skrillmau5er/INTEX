@@ -4,5 +4,16 @@
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
 
-<h2>Index</h2>
-
+<h2>Customer Portal</h2>
+<h4>Select one of the links above or below to see more</h4>
+<div class="row">
+    <div class="col-md-4">
+        <h4>@Html.ActionLink("View quote and pricing", "Quote")</h4>
+    </div>
+    <div class="col-md-4">
+        <h4>@Html.ActionLink("See the status of your current work orders", "OrderStatus")</h4>
+    </div>
+    <div class="col-md-4">
+        <h4>@Html.ActionLink("View your order history", "OrderHistory")</h4>
+    </div>
+</div>
