@@ -1,8 +1,5 @@
 ﻿body {
     text-align: center;
-    background-image: url("https://www.xmple.com/wallpaper/grey-gradient-linear-highlight-white-1920x1080-c2-ffffff-dcdcdc-l-67-a-135-f-21.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-size: 15px;
 }
 /*Nav Bar Styling*/
@@ -74,6 +71,7 @@ textarea {
 .myForm {
     text-align: right;
     padding-right: 25%;
+
 }
 
 input, select {
@@ -105,7 +103,29 @@ input, select {
     border: none;
 }
 
-    .submit-button:hover {
-        box-shadow: #b0b0b0 1px 5px 15px 2px;
-        background: linear-gradient(216deg, rgba(55,120,255,1) 100%, rgba(0,36,189,1) 0%);
-    }
+.submit-button:hover {
+    box-shadow: #b0b0b0 1px 5px 15px 2px;
+    background: linear-gradient(216deg, rgba(55,120,255,1) 100%, rgba(0,36,189,1) 0%);
+}
+
+/*Pic Styles*/
+#chemical_guy{
+    width: 500px;
+}
+
+/*Footer Style*/
+.myFooterText {
+    font-family: Lucida Sans Unicode;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    height: 20px;
+}
+
+
+
+
