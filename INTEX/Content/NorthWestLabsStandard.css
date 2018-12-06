@@ -117,13 +117,13 @@ select:focus {
 #chemical_guy{
     width: 600px;
 }
-.singapore{
+.square-tile{
     height: 250px;
     width: 400px;
     transition: 0.5s;
     object-fit: cover;
 }
-.singapore:hover{
+.square-tile:hover {
     transform: scale(1.03);
 }
 
