@@ -4,18 +4,15 @@
     ViewBag.Title = "QuoteRequests";
 }
 
-<h2>QuoteRequests</h2>
+<h2>Quote Requests</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Customer.CustFirstName)
+            @Html.DisplayNameFor(model => model.Customer.CustomerID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Invoice.InvoiceID)
+            @Html.DisplayNameFor(model => model.EmployeeID)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.OrderDate)
