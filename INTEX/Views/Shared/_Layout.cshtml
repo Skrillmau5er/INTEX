@@ -8,10 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" type="text/css" href="~/Content/NorthWestLabsStandard.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-
 </head>
-<body>
+<body class="navbar-inverse">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -20,7 +18,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
                 <strong>@Html.ActionLink("NorthWestLabs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand menu-link" })</strong>
+=======
+                @Html.ActionLink("Northwest Labs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand menu-link" })
+>>>>>>> f39699394a5c15c2cfbae732c13f5056841b49de
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -31,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="main-body">
         @RenderBody()
         <footer class="myFooterText">
             <p>&copy; @DateTime.Now.Year - Northwest Labs</p>
