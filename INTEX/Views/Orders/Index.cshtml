@@ -29,6 +29,9 @@
         <th>
             @Html.DisplayNameFor(model => model.ActualPrice)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDetails)
+        </th>
         <th></th>
     </tr>
 
@@ -53,9 +56,12 @@
             @Html.DisplayFor(modelItem => item.ActualPrice)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OrderID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OrderID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OrderID })
+            @Html.DisplayFor(modelItem => item.OrderDetails)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.OrderID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.OrderID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.OrderID })
         </td>
     </tr>
 }
