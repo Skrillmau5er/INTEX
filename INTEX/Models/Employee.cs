@@ -7,7 +7,7 @@ using System.Web;
 
 namespace INTEX.Models
 {
-    [Table("Emloyee")]
+    [Table("Employee")]
     public class Employee
     {
         [Key]

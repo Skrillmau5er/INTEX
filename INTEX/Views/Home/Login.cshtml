@@ -6,9 +6,9 @@
 <h2>Login</h2>
 @using (Html.BeginForm())
 {
-    @Html.Raw("Username: ") <input type="text" placeholder="Username" name="username" /> <br />
+<span id="login-text">@Html.Raw("Username: ")</span> <input type="text" placeholder="Username" name="username" /> <br />
 
-    @Html.Raw("Password: ") <input type="password" placeholder="Password" name="password" />
+<span id="login-text">@Html.Raw("Password: ")</span> <input type="password" placeholder="Password" name="password" />
 
     <h4 style="color: red;">@Html.Raw(ViewBag.LoginError)</h4>
 

@@ -198,6 +198,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\SeattleController.cs" />
     <Compile Include="Controllers\SingaporeController.cs" />
     <Compile Include="DAL\IntexContext.cs" />
@@ -230,6 +231,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chemical_guy.jpg" />
+    <Content Include="Content\login_background.png" />
     <Content Include="Content\NorthWestLabsStandard.css" />
     <Content Include="Content\quote_request.jpg" />
     <Content Include="Content\Work_Orders_Thing.jpg" />
@@ -301,6 +303,11 @@
     <Content Include="Views\Singapore\QuoteRequests.cshtml" />
     <Content Include="Views\Customer\CurrentOrders.cshtml" />
     <Content Include="Views\Customer\OrderDetails.cshtml" />
+    <Content Include="Views\Orders\Create.cshtml" />
+    <Content Include="Views\Orders\Delete.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
+    <Content Include="Views\Orders\Edit.cshtml" />
+    <Content Include="Views\Orders\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
