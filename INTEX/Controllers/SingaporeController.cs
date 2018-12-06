@@ -18,11 +18,12 @@ namespace INTEX.Controllers
         }
         public ActionResult WorkOrders()
         {
-            return View(db.WorkOrder.ToList());
+            return RedirectToAction("Index","WorkOrders");
+            //return View(db.WorkOrder.ToList());
         }
         public ActionResult QuoteRequests()
         {
-            return View(db.Order.ToList());
+            return RedirectToAction("Index", "Orders");
         }
     }
 }

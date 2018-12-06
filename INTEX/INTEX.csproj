@@ -233,11 +233,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chemical_guy.jpg" />
+    <Content Include="Content\create-order.jpg" />
     <Content Include="Content\current-orders.jpg" />
     <Content Include="Content\login_background.png" />
     <Content Include="Content\NorthWestLabsStandard.css" />
     <Content Include="Content\order-history.jpg" />
     <Content Include="Content\quote_request.jpg" />
+    <Content Include="Content\view-past-orders.jpg" />
     <Content Include="Content\Work_Orders_Thing.jpg" />
     <Content Include="Content\wowc.mp3" />
     <Content Include="favicon.ico" />
@@ -304,8 +306,6 @@
     <Content Include="Views\Customer\OrderStatus.cshtml" />
     <Content Include="Views\Customer\Quote.cshtml" />
     <Content Include="Views\Customer\OrderHistory.cshtml" />
-    <Content Include="Views\Singapore\WorkOrders.cshtml" />
-    <Content Include="Views\Singapore\QuoteRequests.cshtml" />
     <Content Include="Views\Customer\CurrentOrders.cshtml" />
     <Content Include="Views\Customer\OrderDetails.cshtml" />
     <Content Include="Views\Orders\Create.cshtml" />
