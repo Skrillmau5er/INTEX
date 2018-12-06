@@ -17,7 +17,7 @@ namespace INTEX.Controllers
         }
         public ActionResult WorkOrders()
         {
-            return View(db.WorkOrders.ToList());
+            return View(db.WorkOrder.ToList());
         }
         public ActionResult QuoteRequests()
         {

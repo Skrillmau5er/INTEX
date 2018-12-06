@@ -116,6 +116,13 @@ select:focus {
 #chemical_guy{
     width: 600px;
 }
+.singapore{
+    height: 300px;
+    transition: 0.5s;
+}
+.singapore:hover{
+    transform: scale(1.03);
+}
 
 /*Footer Style*/
 .myFooterText {
@@ -129,6 +136,7 @@ select:focus {
     background-color: white;
     height: 20px;
 }
+
 
 
 

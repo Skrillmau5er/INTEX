@@ -231,6 +231,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chemical_guy.jpg" />
     <Content Include="Content\NorthWestLabsStandard.css" />
+    <Content Include="Content\quote_request.jpg" />
+    <Content Include="Content\Work_Orders_Thing.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
