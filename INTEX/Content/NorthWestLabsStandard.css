@@ -122,8 +122,8 @@ select:focus {
     width: 600px;
 }
 .square-tile{
-    height: 250px;
-    width: 400px;
+    height: 350px;
+    width: 500px;
     transition: 0.5s;
     object-fit: cover;
 }
