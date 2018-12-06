@@ -37,7 +37,7 @@ namespace INTEX.Controllers
         public ActionResult OrderHistory()
         {
 
-            return View();
+            return View(db.Order.ToList());
         }
     }
 }
