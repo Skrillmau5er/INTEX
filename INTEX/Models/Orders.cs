@@ -13,8 +13,8 @@ namespace INTEX.Models
         [Key]
         public int OrderID { get; set; }
         public DateTime OrderDate { get; set; }
-        public double QuotedPrice { get; set; }
-        public double ActualPrice { get; set; }
+        public decimal QuotedPrice { get; set; }
+        public decimal ActualPrice { get; set; }
 
         [Display(Name = "CustomerID")]
         public  virtual int CustomerID { get; set; }
@@ -25,7 +25,7 @@ namespace INTEX.Models
         public virtual Employee Employee { get; set; }
 
         [Display(Name = "InvoiceID")]
-        public virtual int InvoiceID { get; set; }
+        public virtual int? InvoiceID { get; set; }
         public virtual Invoice Invoice { get; set; }
 
         public virtual ICollection<WorkOrder> WorkOrders { get; set; }

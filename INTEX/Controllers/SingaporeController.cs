@@ -13,8 +13,15 @@ namespace INTEX.Controllers
         // GET: Singapore
         public ActionResult Index()
         {
-
             return View();
+        }
+        public ActionResult WorkOrders()
+        {
+            return View(db.WorkOrders.ToList());
+        }
+        public ActionResult QuoteRequests()
+        {
+            return View(db.Order.ToList());
         }
     }
 }

@@ -14,9 +14,9 @@ namespace INTEX.Models
         public int InvoiceID { get; set; }
         public int CustomerID { get; set; }
         public int OrderID { get; set; }
-        public double TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public float EmployeeDiscount { get; set; }
-        public double FinalPrice { get; set; }
+        public decimal FinalPrice { get; set; }
         public DateTime EarlyPaymentDate { get; set; }
         public float EarlyPaymentDiscount { get; set; }
         public DateTime InvoiceDueDate { get; set; }
