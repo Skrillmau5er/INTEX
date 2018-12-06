@@ -299,6 +299,8 @@
     <Content Include="Views\Customer\OrderHistory.cshtml" />
     <Content Include="Views\Singapore\WorkOrders.cshtml" />
     <Content Include="Views\Singapore\QuoteRequests.cshtml" />
+    <Content Include="Views\Customer\CurrentOrders.cshtml" />
+    <Content Include="Views\Customer\OrderDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

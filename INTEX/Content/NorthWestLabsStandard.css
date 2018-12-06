@@ -137,7 +137,9 @@ select:focus {
     height: 20px;
 }
 
-
+th {
+    text-align: center;
+}
 
 
 

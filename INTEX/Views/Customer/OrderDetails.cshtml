@@ -1,0 +1,63 @@
+﻿@model INTEX.Models.Orders
+
+@{
+    ViewBag.Title = "OrderDetails";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<h2>OrderDetails</h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Test 1
+        </dt>
+
+        <dd>
+            Test 2
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.EmpFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.EmpFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Invoice.InvoiceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invoice.InvoiceID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuotedPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuotedPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualPrice)
+        </dd>
+
+    </dl>
+</div>
