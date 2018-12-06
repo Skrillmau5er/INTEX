@@ -15,9 +15,6 @@
             @Html.DisplayNameFor(model => model.Customer.CustFirstName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Employee.EmpFirstName)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Invoice.InvoiceID)
         </th>
         <th>
@@ -37,9 +34,6 @@
         <td>
             @Html.DisplayFor(modelItem => item.Customer.CustFirstName)
         </td>
-        @*<td>
-            @Html.DisplayFor(modelItem => item.Employee.EmpFirstName)
-        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.Invoice.InvoiceID)
         </td>
@@ -54,7 +48,6 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OrderID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OrderID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.OrderID })
         </td>
     </tr>
