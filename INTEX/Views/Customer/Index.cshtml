@@ -6,11 +6,15 @@
 
 <h2>Customer Portal</h2>
 <h4>Select one of the links above or below to see more</h4>
-<div class="col-md-6">
+<div class="col-md-4">
     <h3>Current Orders</h3>
-    <a href="@Url.Action("CurrentOrders", "Customer")"><img src="~/Content/current-orders.jpg" class="square-tile" /></a>
+    <a href="@Url.Action("CurrentOrders", "Customer")"><img src="~/Content/current-orders.jpg" class="customer-tile" /></a>
 </div>
-<div class="col-md-6">
+<div class="col-md-4">
     <h3>Order History</h3>
-    <a href="@Url.Action("OrderHistory", "Customer")"><img src="~/Content/order-history.jpg" class="square-tile"></a>
+    <a href="@Url.Action("OrderHistory", "Customer")"><img src="~/Content/order-history.jpg" class="customer-tile"></a>
+</div>
+<div class="col-md-4">
+    <h3>Test Results</h3>
+    <a href="@Url.Action("TestResults", "Customer")"><img src="~/Content/test-results.png" class="customer-tile"></a>
 </div>

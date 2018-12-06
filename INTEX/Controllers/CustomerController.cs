@@ -48,5 +48,9 @@ namespace INTEX.Controllers
 
             return View(db.Order.ToList());
         }
+        public ActionResult TestResults()
+        {
+            return View();
+        }
     }
 }

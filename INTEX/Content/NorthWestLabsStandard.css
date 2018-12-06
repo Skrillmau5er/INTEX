@@ -127,8 +127,13 @@ select:focus {
     transition: 0.5s;
     object-fit: cover;
 }
-.square-tile:hover {
+.square-tile:hover, .customer-tile:hover {
     transform: scale(1.03);
+}
+
+.customer-tile{
+    width: 90%;
+    transition: 0.5s;
 }
 
 /*Footer Style*/
@@ -175,6 +180,7 @@ th {
     border-image-slice: 1;
     border-width: 3px;
 }
+
 
 
 
