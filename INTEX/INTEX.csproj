@@ -314,6 +314,7 @@
     <Content Include="Views\WorkOrders\Details.cshtml" />
     <Content Include="Views\WorkOrders\Edit.cshtml" />
     <Content Include="Views\WorkOrders\Index.cshtml" />
+    <Content Include="Views\Seattle\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
