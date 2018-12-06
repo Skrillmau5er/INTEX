@@ -1,5 +1,4 @@
-﻿@model INTEX.Models.WorkOrder
-
+﻿@model IEnumerable<INTEX.Models.WorkOrder>
 @{
     ViewBag.Title = "Order Details";
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
@@ -10,61 +9,81 @@
 <div>
     <h4>Work Orders</h4>
     <hr />
+
     @foreach (var item in Model)
     {
+        if (item.OrderID == ViewBag.ID)
+        {
+            @*
+            <div class="col-md-6" style="text-align:right">
+                Order Number:
+            </div>
 
-    <div class="row">
-        <div class="col-md-6" style="text-align:right">
-            Order Number:
-        </div>
+            <div class="col-md-6" style="text-align:left">
+                @item.OrderID
+            </div>
 
-        <div class="col-md-6" style="text-align:left">
-            @Html.DisplayFor(model => model.OrderID)
-        </div>
+            <div class="col-md-6" style="text-align:right">
+                Employee who placed order:
+            </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Employee who placed order:
-        </div>
+            <div class="col-md-6" style="text-align:left">
+                @item.Order.Employee.EmpFirstName
+            </div>
 
-        <div class="col-md-6" style="text-align:left">
-            @Html.DisplayFor(model => model.Order.Employee.EmpFirstName)
-        </div>
+            <div class="col-md-6" style="text-align:right">
+                Order Date:
+            </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Order Date:
-        </div>
+            <div class="col-md-6" style="text-align:left">
+                @item.Order.OrderDate
+            </div>
 
-        <div class="col-md-6" style="text-align:left">
-            @Html.DisplayFor(model => model.Order.OrderDate)
-        </div>
+            <div class="col-md-6" style="text-align:right">
+                Initial Quoted Price:
+            </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Quoted Price:
-        </div>
+            <div class="col-md-6" style="text-align:left">
+                @item.Order.QuotedPrice
+            </div>
 
-        <div class="col-md-6" style="text-align:left">
-            @Html.DisplayFor(model => model.Order.QuotedPrice)
-        </div>
+            <div class="col-md-6" style="text-align:right">
+                Current Exepected Price:
+            </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Current Exepected Price:
-        </div>
+            if (item.Order.ActualPrice != null)
+            {
+                <div class="col-md-6" style="text-align:left">
+                    @item.Order.ActualPrice
+                </div>
+            }
+            else
+            {
+                <div class="col-md-6" style="text-align:left">
+                    @item.Order.QuotedPrice
+                </div>
+            }
 
-        <div class="col-md-6" style="text-align:left">
-            @Html.DisplayFor(model => model.Order.ActualPrice)
-        </div>
+                *@
+            <div class="col-md-6" style="text-align:right">
+                Compound
+            </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Order Status:
-        </div>
+            <div class="col-md-6" style="text-align:left">
+                @item.Compound.CompoundName
+            </div>
 
-        <div class="col-md-6" style="text-align:left">
-            <strong>
-                <u>
-                    @Html.DisplayFor(model => model.Status.StatusDescription)
-                </u>
-            </strong>
-        </div>
-    </div>
+            <div class="col-md-6" style="text-align:right">
+                Work Order Status:
+            </div>
+
+            <div class="col-md-6" style="text-align:left">
+                <strong>
+                    <u>
+                        @item.Status.StatusDescription
+                    </u>
+                </strong>
+            </div>
+        }
     }
 </div>

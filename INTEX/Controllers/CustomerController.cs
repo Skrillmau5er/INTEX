@@ -34,12 +34,14 @@ namespace INTEX.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }*/
+            ViewBag.ID = id;
             Orders order = db.Order.Find(id);
+            ViewBag.Order = order;
             /*if (WorkOrder == null)
             {
                 return HttpNotFound();
             }*/
-            return View(order);
+            return View(db.WorkOrder.ToList());
         }
 
 
