@@ -103,32 +103,6 @@ namespace INTEX.Controllers
             return View(orders);
         }
 
-        // GET: Orders/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Orders orders = db.Order.Find(id);
-            if (orders == null)
-            {
-                return HttpNotFound();
-            }
-            return View(orders);
-        }
-
-        // POST: Orders/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Orders orders = db.Order.Find(id);
-            db.Order.Remove(orders);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)

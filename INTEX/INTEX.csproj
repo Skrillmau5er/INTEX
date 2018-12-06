@@ -237,6 +237,7 @@
     <Content Include="Content\current-orders.jpg" />
     <Content Include="Content\login_background.png" />
     <Content Include="Content\NorthWestLabsStandard.css" />
+    <Content Include="Content\noun_test tubes_959351.png" />
     <Content Include="Content\order-history.jpg" />
     <Content Include="Content\quote_request.jpg" />
     <Content Include="Content\test-results.png" />
@@ -302,7 +303,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Seattle\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Singapore\Index.cshtml" />
+    <Content Include="Views\Singapore\WorkOrders.cshtml" />
     <Content Include="Views\Shared\_CustomerLayout.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\OrderStatus.cshtml" />
@@ -311,8 +312,6 @@
     <Content Include="Views\Customer\CurrentOrders.cshtml" />
     <Content Include="Views\Customer\OrderDetails.cshtml" />
     <Content Include="Views\Orders\Create.cshtml" />
-    <Content Include="Views\Orders\Delete.cshtml" />
-    <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
@@ -324,6 +323,9 @@
     <Content Include="Views\Home\OwenWilson.cshtml" />
     <Content Include="Views\Shared\_SeattleLayout.cshtml" />
     <Content Include="Views\Shared\_SingaporeLayout.cshtml" />
+    <Content Include="Views\Singapore\Details.cshtml" />
+    <Content Include="Views\Singapore\Edit.cshtml" />
+    <Content Include="Views\Singapore\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

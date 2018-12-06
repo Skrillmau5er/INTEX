@@ -1,0 +1,53 @@
+﻿@model IEnumerable<INTEX.Models.WorkOrder>
+
+@{
+    ViewBag.Title = "Work Orders";
+    Layout = "~/Views/Shared/_SingaporeLayout.cshtml";
+}
+
+<h2>Work Orders</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Compound Name
+        </th>
+        <th>
+           Order Details
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Due Date
+        </th>
+        <th>
+            Summary Report
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Compound.CompoundName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order.OrderDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.StatusDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DueDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SummaryReport)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.WorkOrderID })
+        </td>
+    </tr>
+}
+
+</table>

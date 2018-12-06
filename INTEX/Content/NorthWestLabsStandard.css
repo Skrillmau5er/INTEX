@@ -79,7 +79,7 @@ textarea {
 
 }
 
-input, select {
+input {
     border-radius: 30px;
     border: solid #a3a3a3 1.5px;
     height: 2.4em;
@@ -112,7 +112,7 @@ select:focus {
     border: none;
 }
 
-.submit-button:hover {
+.submit-button:hover, {
     box-shadow: #b0b0b0 1px 3px 20px 0px;
     background: linear-gradient(216deg, rgba(55,120,255,1) 100%, rgba(0,36,189,1) 0%);
 }
@@ -174,7 +174,7 @@ th {
     cursor: pointer;
 }
 
-/* Green */
+
 .success {
     border-image: linear-gradient(216deg, rgba(55,120,255,1) 100%, rgba(0,36,189,1) 0%);
     border-image-slice: 1;
@@ -183,4 +183,8 @@ th {
 
 #owenwilson{
     width: 400px;
+}
+
+.left-align{
+    text-align: left !important;
 }

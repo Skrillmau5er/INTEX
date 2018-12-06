@@ -5,74 +5,39 @@
 }
 
 <h2>Order Details</h2>
-
-<div>
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Compound.CompoundName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Compound.CompoundName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Order.OrderID)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Order.OrderID)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Status.StatusDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Status.StatusDescription)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DueDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DueDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SummaryReport)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SummaryReport)
-        </dd>
-    </dl>
-</div>
-
+@{int i = 0; }
 @foreach (var item in Model)
 {
     if (item.OrderID == ViewBag.ID)
     {
-        <div class="col-md-6" style="text-align:right">
-            Compound
-        </div>
+        if (i == 0)
+        {
+            <div class="col-md-3">
+                <h3>Order Details</h3>
+                <div>
+                    <strong>OrderID:</strong> @item.Order.OrderID
+                </div>
+                <div>
+                    <strong>DueDate:</strong> @item.DueDate
+                </div>
 
-        <div class="col-md-6" style="text-align:left">
-            @item.Compound.CompoundName
-        </div>
+                <div>
+                    <strong>SummaryReport:</strong> @item.SummaryReport
+                </div>
+            </div>
+        }
+        
+            <div class="col-md-3">
+                <h3>Sample @Html.Raw(i+1)</h3>
+                <div>
+                    <strong>Compound: </strong> @item.Compound.CompoundName
+                </div>
 
-        <div class="col-md-6" style="text-align:right">
-            Work Order Status:
-        </div>
-
-        <div class="col-md-6" style="text-align:left">
-            <strong>
-                <u>
-                    @item.Status.StatusDescription
-                </u>
-            </strong>
-        </div>
+                <div>
+                    <strong>Work Order Status:</strong> <u> @item.Status.StatusDescription </u>
+                </div>
+            </div>
+        i++;
     }
 }
-</div>
+

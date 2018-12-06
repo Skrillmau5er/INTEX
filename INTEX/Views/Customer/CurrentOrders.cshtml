@@ -6,10 +6,6 @@
 }
 
 <h2>Current Orders</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Contact", "Home")
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -21,9 +17,6 @@
             </th>
             <th>
                 Quoted Price
-            </th>
-            <th>
-                Current Expected Price
             </th>
             <th></th>
         </tr>
@@ -42,9 +35,6 @@
                     </td>
                     <td>
                         $@Html.DisplayFor(modelItem => item.QuotedPrice)
-                    </td>
-                    <td>
-                        $@Html.DisplayFor(modelItem => item.ActualPrice)
                     </td>
                     <td>
                         @Html.ActionLink("View Order Details", "OrderDetails", new { id = item.OrderID })

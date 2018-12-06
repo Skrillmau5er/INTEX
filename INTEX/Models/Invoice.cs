@@ -21,6 +21,6 @@ namespace INTEX.Models
         public double? EarlyPaymentDiscount { get; set; }
         public DateTime InvoiceDueDate { get; set; }
         public DateTime SentDate { get; set; }
-        public DateTime ReceivedPaymentDate { get; set; }
+        public DateTime? ReceivedPaymentDate { get; set; }
     }
 }
