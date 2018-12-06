@@ -14,7 +14,7 @@ namespace INTEX.Models
         public int OrderID { get; set; }
         public DateTime OrderDate { get; set; }
         public decimal QuotedPrice { get; set; }
-        public decimal ActualPrice { get; set; }
+        public decimal? ActualPrice { get; set; }
 
         [Display(Name = "CustomerID")]
         public  virtual int CustomerID { get; set; }

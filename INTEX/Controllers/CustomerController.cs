@@ -1,4 +1,5 @@
 ﻿using INTEX.DAL;
+using INTEX.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,17 @@ namespace INTEX.Controllers
             return View();
         }
 
-        public ActionResult OrderStatus()
+        public ActionResult CurrentOrders()
+        {
+            return View(db.Order.ToList());
+        }
+
+        [HttpGet]
+        public ActionResult OrderDetails(int ID)
         {
             return View();
         }
+
 
         public ActionResult OrderHistory()
         {

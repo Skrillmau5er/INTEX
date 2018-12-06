@@ -117,11 +117,13 @@ select:focus {
 #chemical_guy{
     width: 600px;
 }
-.singapore{
-    height: 300px;
+.square-tile{
+    height: 250px;
+    width: 400px;
     transition: 0.5s;
+    object-fit: cover;
 }
-.singapore:hover{
+.square-tile:hover {
     transform: scale(1.03);
 }
 
@@ -136,6 +138,11 @@ select:focus {
     text-align: center;
     background-color: white;
     height: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+th {
+    text-align: center;
 }
 
 #login-text{
@@ -158,8 +165,6 @@ select:focus {
     border-image-slice: 1;
     border-width: 3px;
 }
-
-
 
 
 
