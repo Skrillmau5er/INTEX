@@ -16,6 +16,17 @@ if (typeof jQuery === 'undefined') {
   }
 }(jQuery);
 
+$(function () {
+    $("audio").on({
+        mouseover: function () {
+            $(this).css({
+                left: (Math.random() * 200) + "px",
+                top: (Math.random() * 200) + "px",
+            });
+        }
+    });
+});
+
 /* ========================================================================
  * Bootstrap: transition.js v3.3.7
  * http://getbootstrap.com/javascript/#transitions
