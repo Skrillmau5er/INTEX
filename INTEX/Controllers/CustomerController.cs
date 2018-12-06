@@ -18,7 +18,6 @@ namespace INTEX.Controllers
 
         public ActionResult Quote()
         {
-
             return View();
         }
 
