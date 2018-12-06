@@ -1,13 +1,10 @@
-﻿<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-    </div>
-    <div class="col-md-4">
-        <p class="lead">
-            @Html.ActionLink("Create A New Quote", "Create", "Orders", null, new { @class = "btn btn-primary btn-large" })
-        </p>
-    </div>
-    <div class="col-md-4">
-    </div>
+﻿
+<h2>Seattle Portal Overview</h2>
+<div class="col-md-6">
+    <h3>Create Orders</h3>
+    <a href="@Url.Action("Create", "Orders")"><img src="~/Content/create-order.jpg" class="square-tile" /></a>
+</div>
+<div class="col-md-6">
+    <h3>View Past Orders</h3>
+    <a href="@Url.Action("Index", "Orders")"><img src="~/Content/view-past-orders.jpg" class="square-tile"></a>
 </div>
