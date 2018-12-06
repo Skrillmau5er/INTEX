@@ -3,6 +3,7 @@ using INTEX.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -27,10 +28,18 @@ namespace INTEX.Controllers
             return View(db.Order.ToList());
         }
 
-        [HttpGet]
-        public ActionResult OrderDetails(int ID)
+        public ActionResult OrderDetails(int? id)
         {
-            return View();
+            /*if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }*/
+            Orders order = db.Order.Find(id);
+            /*if (WorkOrder == null)
+            {
+                return HttpNotFound();
+            }*/
+            return View(order);
         }
 
 
