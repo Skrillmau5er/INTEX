@@ -150,7 +150,13 @@ th {
     font-weight: 600;
 }
 
-.btn {
+
+.hero-image{
+    padding: 150px;
+    margin-bottom: 50px;
+}
+
+.btn{
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -167,5 +173,6 @@ th {
 }
 
 
+>>>>>>> f74a248332b039483e7319a40fb052549378d9fc
 
 
