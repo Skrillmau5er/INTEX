@@ -15,10 +15,10 @@ namespace INTEX.Models
         public int CustomerID { get; set; }
         public int OrderID { get; set; }
         public decimal TotalPrice { get; set; }
-        public float EmployeeDiscount { get; set; }
+        public double? EmployeeDiscount { get; set; }
         public decimal FinalPrice { get; set; }
         public DateTime EarlyPaymentDate { get; set; }
-        public float EarlyPaymentDiscount { get; set; }
+        public double? EarlyPaymentDiscount { get; set; }
         public DateTime InvoiceDueDate { get; set; }
         public DateTime SentDate { get; set; }
         public DateTime ReceivedPaymentDate { get; set; }

@@ -239,6 +239,7 @@
     <Content Include="Content\order-history.jpg" />
     <Content Include="Content\quote_request.jpg" />
     <Content Include="Content\Work_Orders_Thing.jpg" />
+    <Content Include="Content\wowc.mp3" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
