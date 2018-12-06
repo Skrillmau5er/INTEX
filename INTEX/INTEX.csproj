@@ -322,6 +322,8 @@
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\Customer\TestResults.cshtml" />
     <Content Include="Views\Home\OwenWilson.cshtml" />
+    <Content Include="Views\Shared\_SeattleLayout.cshtml" />
+    <Content Include="Views\Shared\_SingaporeLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
