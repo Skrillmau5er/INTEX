@@ -7,83 +7,72 @@
 <h2>Order Details</h2>
 
 <div>
-    <h4>Work Orders</h4>
-    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Compound.CompoundName)
+        </dt>
 
-    @foreach (var item in Model)
+        <dd>
+            @Html.DisplayFor(model => model.Compound.CompoundName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.OrderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.OrderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.StatusDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.StatusDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SummaryReport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SummaryReport)
+        </dd>
+    </dl>
+</div>
+
+@foreach (var item in Model)
+{
+    if (item.OrderID == ViewBag.ID)
     {
-        if (item.OrderID == ViewBag.ID)
-        {
-            @*
-            <div class="col-md-6" style="text-align:right">
-                Order Number:
-            </div>
+        <div class="col-md-6" style="text-align:right">
+            Compound
+        </div>
 
-            <div class="col-md-6" style="text-align:left">
-                @item.OrderID
-            </div>
+        <div class="col-md-6" style="text-align:left">
+            @item.Compound.CompoundName
+        </div>
 
-            <div class="col-md-6" style="text-align:right">
-                Employee who placed order:
-            </div>
+        <div class="col-md-6" style="text-align:right">
+            Work Order Status:
+        </div>
 
-            <div class="col-md-6" style="text-align:left">
-                @item.Order.Employee.EmpFirstName
-            </div>
-
-            <div class="col-md-6" style="text-align:right">
-                Order Date:
-            </div>
-
-            <div class="col-md-6" style="text-align:left">
-                @item.Order.OrderDate
-            </div>
-
-            <div class="col-md-6" style="text-align:right">
-                Initial Quoted Price:
-            </div>
-
-            <div class="col-md-6" style="text-align:left">
-                @item.Order.QuotedPrice
-            </div>
-
-            <div class="col-md-6" style="text-align:right">
-                Current Exepected Price:
-            </div>
-
-            if (item.Order.ActualPrice != null)
-            {
-                <div class="col-md-6" style="text-align:left">
-                    @item.Order.ActualPrice
-                </div>
-            }
-            else
-            {
-                <div class="col-md-6" style="text-align:left">
-                    @item.Order.QuotedPrice
-                </div>
-            }
-
-                *@
-            <div class="col-md-6" style="text-align:right">
-                Compound
-            </div>
-
-            <div class="col-md-6" style="text-align:left">
-                @item.Compound.CompoundName
-            </div>
-
-            <div class="col-md-6" style="text-align:right">
-                Work Order Status:
-            </div>
-
-            <div class="col-md-6" style="text-align:left">
-                <strong>
-                    <u>
-                        @item.Status.StatusDescription
-                    </u>
-                </strong>
-            </div>
-        }
+        <div class="col-md-6" style="text-align:left">
+            <strong>
+                <u>
+                    @item.Status.StatusDescription
+                </u>
+            </strong>
+        </div>
     }
+}
 </div>

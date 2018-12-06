@@ -243,6 +243,7 @@
     <Content Include="Content\view-past-orders.jpg" />
     <Content Include="Content\Work_Orders_Thing.jpg" />
     <Content Include="Content\wowc.mp3" />
+    <Content Include="Content\Wow_3.mp3" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -320,6 +321,7 @@
     <Content Include="Views\WorkOrders\Edit.cshtml" />
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\Customer\TestResults.cshtml" />
+    <Content Include="Views\Home\OwenWilson.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

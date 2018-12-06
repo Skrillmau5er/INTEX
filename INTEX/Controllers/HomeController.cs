@@ -47,11 +47,20 @@ namespace INTEX.Controllers
             {
                 return RedirectToAction("Index","Customer");
             }
+            else if (username == "owenwilson" && password == "wowfactor")
+            {
+                return RedirectToAction("OwenWilson", "Home");
+            }
             else
             {
                 ViewBag.LoginError = "Incorrect Login Information. Please Try Again.";
                 return View();
             }
+        }
+
+        public ActionResult OwenWilson()
+        {
+            return View();
         }
     }
 }
