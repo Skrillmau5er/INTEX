@@ -3,6 +3,10 @@
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
 }
+
+.main-body {
+    padding-bottom: 20px;
+}
 /*Nav Bar Styling*/
 .menu-link {
     position: relative;

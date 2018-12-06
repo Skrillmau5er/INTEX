@@ -30,14 +30,14 @@
         </div>
     </div>
     <div class="main-body">
-        @RenderBody()
-        <footer class="myFooterText">
-            <p>&copy; @DateTime.Now.Year - Northwest Labs</p>
-        </footer>
-    </div>
+            @RenderBody()
+            <footer class="myFooterText">
+                <p>&copy; @DateTime.Now.Year - Northwest Labs</p>
+            </footer>
+        </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
