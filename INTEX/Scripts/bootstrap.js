@@ -24,9 +24,7 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 +function sendtoContact() {
-    document.getElementById("quote").onclick = function () {
-        location.href = "www.google.com";
-    };
+    location.href = "www.google.com";
 }
 +function ($) {
   'use strict';
