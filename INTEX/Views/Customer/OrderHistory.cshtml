@@ -53,7 +53,10 @@
                         @Html.DisplayFor(modelItem => item.OrderDate)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.QuotedPrice)
+                        $@Html.DisplayFor(modelItem => item.QuotedPrice)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => item.ActualPrice)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Invoice.EmployeeDiscount)
@@ -62,7 +65,7 @@
                         @Html.DisplayFor(modelItem => item.Invoice.EarlyPaymentDiscount)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Invoice.FinalPrice)
+                        $@Html.DisplayFor(modelItem => item.Invoice.FinalPrice)
                     </td>
                     @if (item.Invoice.ReceivedPaymentDate != null)
                     {

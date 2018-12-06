@@ -1,63 +1,70 @@
-﻿@model INTEX.Models.Orders
+﻿@model INTEX.Models.WorkOrder
 
 @{
-    ViewBag.Title = "OrderDetails";
+    ViewBag.Title = "Order Details";
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
 
-<h2>OrderDetails</h2>
+<h2>Order Details</h2>
 
 <div>
-    <h4>Orders</h4>
+    <h4>Work Orders</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            Test 1
-        </dt>
+    @foreach (var item in Model)
+    {
 
-        <dd>
-            Test 2
-        </dd>
+    <div class="row">
+        <div class="col-md-6" style="text-align:right">
+            Order Number:
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Employee.EmpFirstName)
-        </dt>
+        <div class="col-md-6" style="text-align:left">
+            @Html.DisplayFor(model => model.OrderID)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Employee.EmpFirstName)
-        </dd>
+        <div class="col-md-6" style="text-align:right">
+            Employee who placed order:
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Invoice.InvoiceID)
-        </dt>
+        <div class="col-md-6" style="text-align:left">
+            @Html.DisplayFor(model => model.Order.Employee.EmpFirstName)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Invoice.InvoiceID)
-        </dd>
+        <div class="col-md-6" style="text-align:right">
+            Order Date:
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </dt>
+        <div class="col-md-6" style="text-align:left">
+            @Html.DisplayFor(model => model.Order.OrderDate)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.OrderDate)
-        </dd>
+        <div class="col-md-6" style="text-align:right">
+            Quoted Price:
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.QuotedPrice)
-        </dt>
+        <div class="col-md-6" style="text-align:left">
+            @Html.DisplayFor(model => model.Order.QuotedPrice)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.QuotedPrice)
-        </dd>
+        <div class="col-md-6" style="text-align:right">
+            Current Exepected Price:
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ActualPrice)
-        </dt>
+        <div class="col-md-6" style="text-align:left">
+            @Html.DisplayFor(model => model.Order.ActualPrice)
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.ActualPrice)
-        </dd>
+        <div class="col-md-6" style="text-align:right">
+            Order Status:
+        </div>
 
-    </dl>
+        <div class="col-md-6" style="text-align:left">
+            <strong>
+                <u>
+                    @Html.DisplayFor(model => model.Status.StatusDescription)
+                </u>
+            </strong>
+        </div>
+    </div>
+    }
 </div>
