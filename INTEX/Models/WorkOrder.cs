@@ -13,14 +13,14 @@ namespace INTEX.Models
         [Key]
         public int WorkOrderID { get; set; }
         public DateTime DueDate { get; set; }
-        public String SummaryReport { get; set; }
+        public string SummaryReport { get; set; }
 
         [Display(Name = "OrderID")]
         public virtual int OrderID { get; set; }
         public virtual Orders Order { get; set; }
 
         [Display(Name = "StatusID")]
-        public virtual int StatusID { get; set; }
+        public virtual int? StatusID { get; set; }
         public virtual Status Status { get; set; }
 
         [Display(Name = "LTNumber")]

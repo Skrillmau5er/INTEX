@@ -13,7 +13,7 @@ namespace INTEX.Models
         [Key]
         public int OrderID { get; set; }
         public DateTime OrderDate { get; set; }
-        public decimal QuotedPrice { get; set; }
+        public decimal? QuotedPrice { get; set; }
         public decimal? ActualPrice { get; set; }
         public string OrderDetails { get; set; }
 
