@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Authors: Alec Ostheimer, Ben Walbrecht, Zach McQuiston, Cash Allred
+
+//Description: This project helps Northwest Labs with keeps work orders up to date and trackable for customers. 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
