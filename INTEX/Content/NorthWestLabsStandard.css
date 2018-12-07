@@ -178,7 +178,7 @@ th {
 .success {
     border-image: linear-gradient(216deg, rgba(55,120,255,1) 100%, rgba(0,36,189,1) 0%);
     border-image-slice: 1;
-    border-width: 3px;
+    border-width: 6px;
 }
 
 #owenwilson{
