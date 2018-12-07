@@ -41,8 +41,8 @@
     }
 
 .navbar-inverse {
-    background: rgb(0,36,189);
-    background: linear-gradient(36deg, rgba(0,36,189,1) 0%, rgba(55,120,255,1) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: none;
 }
 /*Image styling*/
