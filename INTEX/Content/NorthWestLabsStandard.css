@@ -165,8 +165,9 @@ th {
     margin-bottom: 50px;
 }
 
-.btn{
+.btn {
     border: 2px solid black;
+    background-image: url('background-northwest.png');
     background-color: white;
     color: black;
     padding: 14px 28px;
